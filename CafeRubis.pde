@@ -27,15 +27,15 @@ void drawTable()
     rect(40, 50+y, 300, 62);
     y=y+70;
   }
+}
 
- /* for(float y = -5 ; y <=5; y ++)
-  {
-    float ly = map(y, -5, 5, 50, height - 50);
-    line(50, ly, width - 50, ly);
-  }*/
+void line()
+{
+  line(width/2, 0, width/2, height);
 }
 
 void draw()
 {
   drawTable();
+  line();
 }
